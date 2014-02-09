@@ -1,12 +1,3 @@
-#
-# Cookbook Name:: chef-mysql_replication_listener
-# Recipe:: default
-#
-# Copyright (C) 2014 Lester Celestial
-#
-# All rights reserved - Do Not Redistribute
-#
-
 include_recipe 'git'
 include_recipe "cmake"
 include_recipe "build-essential"
@@ -27,7 +18,7 @@ bash "install_mysql-replication-listener" do
   code <<-EOH
     cmake .
     make
-    sudo make install
+    make install
   EOH
   action :nothing
 end
