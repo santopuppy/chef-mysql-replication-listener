@@ -1,4 +1,4 @@
-# chef-mysql_replication_listener
+# chef-mysql-replication-listener
 
 Installs mysql-replication-listener
 
@@ -18,13 +18,13 @@ Tested on Ubuntu 12.04
   <tr>
     <td><tt>['listener']['git_repository']</tt></td>
     <td>String</td>
-    <td>Default git repository for mysql-replication-listener's source</td>
+    <td>git repository for mysql-replication-listener's source</td>
     <td><tt>'https://github.com/SponsorPay/mysql-replication-listener.git'</tt></td>
   </tr>
   <tr>
     <td><tt>['listener']['git_revision']</tt></td>
     <td>String</td>
-    <td>Default git branch for mysql-replication-listener's source</td>
+    <td>git branch for mysql-replication-listener's source</td>
     <td><tt>'master'</tt></td>
   </tr>
   
@@ -32,14 +32,14 @@ Tested on Ubuntu 12.04
 
 ## Usage
 
-### chef-mysql_replication_listener::default
+### mysql-replication-listener::default
 
-Include `chef-mysql_replication_listener` in your node's `run_list`:
+Include `mysql-replication-listener` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[chef-mysql_replication_listener::default]"
+    "recipe[mysql-replication-listener::default]"
   ]
 }
 ```
