@@ -19,6 +19,7 @@ git "#{Chef::Config[:file_cache_path]}/mysql-replication-listener" do
   repository node['listener']['git_repository']
   reference node['listener']['git_revision']
   action :sync
+  notifies :run, "bash[install_mysql-replication-listener]"
 end
 
 bash "install_mysql-replication-listener" do
@@ -28,5 +29,5 @@ bash "install_mysql-replication-listener" do
     make
     sudo make install
   EOH
-  not_if { ::File.exists?("/usr/local/lib/libreplication.so") }
+  action :nothing
 end
