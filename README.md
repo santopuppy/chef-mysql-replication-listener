@@ -1,4 +1,4 @@
-# chef-mysql_replication_listener-cookbook
+# chef-mysql_replication_listener
 
 Installs mysql-replication-listener
 
