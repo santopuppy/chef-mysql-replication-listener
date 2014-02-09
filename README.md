@@ -19,13 +19,13 @@ Tested on Ubuntu 12.04
     <td><tt>['listener']['git_repository']</tt></td>
     <td>String</td>
     <td>git repository for mysql-replication-listener's source</td>
-    <td><tt>'https://github.com/SponsorPay/mysql-replication-listener.git'</tt></td>
+    <td><tt>https://github.com/SponsorPay/mysql-replication-listener.git</tt></td>
   </tr>
   <tr>
     <td><tt>['listener']['git_revision']</tt></td>
     <td>String</td>
     <td>git branch for mysql-replication-listener's source</td>
-    <td><tt>'master'</tt></td>
+    <td><tt>master</tt></td>
   </tr>
   
 </table>
