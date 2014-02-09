@@ -1,10 +1,10 @@
 # chef-mysql_replication_listener-cookbook
 
-TODO: Enter the cookbook description here.
+Installs mysql-replication-listener
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Tested on Ubuntu 12.04
 
 ## Attributes
 
@@ -16,11 +16,18 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['chef-mysql_replication_listener']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['listener']['git_repository']</tt></td>
+    <td>String</td>
+    <td>Default git repository for mysql-replication-listener's source</td>
+    <td><tt>'https://github.com/SponsorPay/mysql-replication-listener.git'</tt></td>
   </tr>
+  <tr>
+    <td><tt>['listener']['git_revision']</tt></td>
+    <td>String</td>
+    <td>Default git branch for mysql-replication-listener's source</td>
+    <td><tt>'master'</tt></td>
+  </tr>
+  
 </table>
 
 ## Usage
@@ -48,4 +55,4 @@ Include `chef-mysql_replication_listener` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: Lester Celestial (<YOUR_EMAIL>)
+Author:: Lester Celestial (<lestercsp@sourcepad.com>)
