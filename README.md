@@ -39,7 +39,7 @@ Include `mysql-replication-listener` in your node's `run_list`:
 ```json
 {
   "run_list": [
-    "recipe[mysql-replication-listener::default]"
+    "recipe[mysql-replication-listener]"
   ]
 }
 ```
